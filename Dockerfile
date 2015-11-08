@@ -7,4 +7,4 @@ COPY Gallery /var/www/gallery
 
 ADD ./nginx.static.conf /etc/nginx/conf.d/default.conf
 
-CMD /restart.sh
+CMD /usr/local/sbin/nginx -g reload
