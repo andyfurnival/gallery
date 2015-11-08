@@ -4,7 +4,9 @@ MAINTAINER Andy Furnival
 
 
 COPY Gallery /var/www/gallery
+RUN chmod 775 /var/www/gallery
 
-ADD ./nginx.static.conf /etc/nginx/conf.d/default.conf
+ADD ./nginx.static.conf /etc/nginx/conf.d/gallery.conf
 
-CMD /usr/local/sbin/nginx -g reload
+#CMD /usr/local/sbin/nginx -g reload
+CMD /usr/local/sbin/nginx
