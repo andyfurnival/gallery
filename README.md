@@ -5,6 +5,7 @@ Gallery is a sample Angular app that displays 100 thumbnails.
 The Dockerfile can be used to boot up the app on an Nginx server running both HTTP and HTTPS (with http2) connections. 
 
 Docker image dependencies
+
 andyfurnival/gallery:master -> andyfurnival/nginx:master (NGinx version is 1.9.6)
 andyfurnival/nginx:master -> andyfurnival/centos:master (CentOS 7)
 andyfurnival/centos:master -> centos/centos7
