@@ -11,8 +11,8 @@ angular.module('galleryApp',[]).
     }]);
 
 var GalleryController = function($scope,DataSource) {
-    var IMAGE_WIDTH = 405;
-    $scope.IMAGE_LOCATION = "http://52.18.92.13:8080/images";
+    var IMAGE_WIDTH = 640;
+    $scope.IMAGE_LOCATION = "/images/";
     
     // Retrieve and set data 
     DataSource.get("images.json",function(data) {
