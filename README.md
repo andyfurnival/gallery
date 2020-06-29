@@ -21,4 +21,5 @@ docker ps
 
 once you know the port number exposed by the docker container, you can then use http://localhost:{port} to access the app.
 
+TEST
 *If you're using boot2docker, you will need to use the boot2docker-vm IP rather than localhost.*
